@@ -16,7 +16,7 @@ test2::~test2()
 
 void test2::SetKey()
 {
-  printf("please input key\n");
+  // printf("please input key\n");
   m_key = getch();
   printf("currentkey = %s", &m_key);
 }

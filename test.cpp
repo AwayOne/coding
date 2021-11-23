@@ -8,20 +8,16 @@ void pt()
 void test::StartKey()
 {
   key = new test2();
-  printf("this is test2thred\n");
+  printf("keythredstart\n");
   while (1)
   {
     /* code */
-    Sleep(500);
-    hello = 0;
-    hi = 0;
-    how = 0;
-    areyou = 0;
+    Sleep(20);
     key->SetKey();
-    printf("key->GetKey() = %c\n", key->GetKey());
+    // printf("key->GetKey() = %c\n", key->GetKey());
     if(key->GetKey() == '1')
     {
-      printf("hello = 1\n");
+      // printf("hello = 1\n");
       hello = 1;
     }
     if(key->GetKey() == '2')
@@ -40,7 +36,7 @@ void test::StartKey()
     {
       thbreak = 1;
     }
-    printf("key\n");
+    // printf("key\n");
   }
 }
 
@@ -59,12 +55,16 @@ test::~test()
 
 void test::SayHello()
 {
+  printf("Hellothredstart\n");
   while (1)
   {
     /* code */
-    Sleep(1000);
+    Sleep(40);
     if (hello)
+    {
       printf("Hello\n");
+      hello = 0;
+    } 
     if (thbreak)
     {
       printf("Helloout\n");
@@ -76,12 +76,16 @@ void test::SayHello()
 
 void test::SayHi()
 {
+  printf("Hithredstart\n");
   while (1)
   {
     /* code */
-    Sleep(1000);
+    Sleep(40);
     if (hi)
+    {
       printf("Hi\n");
+      hi = 0;
+    }
     if (thbreak)
     {
       printf("Hiout\n");
@@ -92,12 +96,16 @@ void test::SayHi()
 
 void test::SayHow()
 {
+  printf("Howthredstart\n");
   while (1)
   {
     /* code */
-    Sleep(1000);
+    Sleep(40);
     if (how)
+    {
       printf("How\n");
+      how = 0;
+    }
     if (thbreak)
     {
       printf("Howout\n");
@@ -108,12 +116,16 @@ void test::SayHow()
 
 void test::SayAreYou()
 {
+  printf("HowAreYouthredstart\n");
   while (1)
   {
     /* code */
-    Sleep(1000);
+    Sleep(40);
     if (areyou)
+    {
       printf("AreYou\n");
+      areyou = 0;
+    }
     if (thbreak)
     {
       printf("AreYouout\n");
@@ -169,5 +181,30 @@ void test::StartAllThred()
   pthread_create(&m_thread_2, NULL, StartThreadSayHi, (void *)this);
   pthread_create(&m_thread_3, NULL, StartThreadSayHow, (void *)this);
   pthread_create(&m_thread_4, NULL, StartThreadSayAreYou, (void *)this);
-  printf("hello1\n");
+  // if (0 != m_thread_key)
+	// {	
+	// 	pthread_join(m_thread_key, NULL);
+	// 	m_thread_key = 0;
+	// }
+  // if (0 != m_thread_1)
+	// {	
+	// 	pthread_join(m_thread_1, NULL);
+	// 	m_thread_1 = 0;
+	// }
+  // if (0 != m_thread_2)
+	// {	
+	// 	pthread_join(m_thread_2, NULL);
+	// 	m_thread_2 = 0;
+	// }
+  // if (0 != m_thread_3)
+	// {	
+	// 	pthread_join(m_thread_3, NULL);
+	// 	m_thread_3 = 0;
+	// }
+  // if (0 != m_thread_4)
+	// {	
+	// 	pthread_join(m_thread_4, NULL);
+	// 	m_thread_4 = 0;
+	// }
+  // printf("hello1\n");
 }
