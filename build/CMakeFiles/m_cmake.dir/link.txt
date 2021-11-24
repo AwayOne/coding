@@ -1,0 +1,3 @@
+"D:\Program Files\Environment\cmake-3.22.0-windows-x86_64\bin\cmake.exe" -E rm -f CMakeFiles\m_cmake.dir/objects.a
+"D:\Program Files\mingw64\bin\ar.exe" qc CMakeFiles\m_cmake.dir/objects.a @CMakeFiles\m_cmake.dir\objects1.rsp
+"D:\Program Files\mingw64\bin\x86_64-w64-mingw32-g++.exe" -g -Wl,--whole-archive CMakeFiles\m_cmake.dir/objects.a -Wl,--no-whole-archive -o m_cmake.exe -Wl,--out-implib,libm_cmake.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\m_cmake.dir\linklibs.rsp

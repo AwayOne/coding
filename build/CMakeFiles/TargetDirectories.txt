@@ -1,0 +1,3 @@
+C:/Users/cnop/Desktop/coding/build/CMakeFiles/m_cmake.dir
+C:/Users/cnop/Desktop/coding/build/CMakeFiles/edit_cache.dir
+C:/Users/cnop/Desktop/coding/build/CMakeFiles/rebuild_cache.dir

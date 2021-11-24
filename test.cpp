@@ -15,6 +15,7 @@ void test::StartKey()
     Sleep(20);
     key->SetKey();
     // printf("key->GetKey() = %c\n", key->GetKey());
+    pthread_mutex_lock (&mutex);
     if(key->GetKey() == '1')
     {
       // printf("hello = 1\n");
@@ -36,6 +37,8 @@ void test::StartKey()
     {
       thbreak = 1;
     }
+    Sleep(5000);
+    pthread_mutex_unlock (&mutex);
     // printf("key\n");
   }
 }
@@ -47,6 +50,7 @@ test::test(/* args */)
   how = 0;
   areyou = 0;
   thbreak = 0;
+  pthread_mutex_init (&mutex,NULL);
 }
 
 test::~test()
@@ -59,7 +63,8 @@ void test::SayHello()
   while (1)
   {
     /* code */
-    Sleep(40);
+    Sleep(1000);
+    printf("Hellotest\n");
     if (hello)
     {
       printf("Hello\n");

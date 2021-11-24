@@ -2,10 +2,11 @@
 #define _TEST2_H_
 #include <stdio.h>
 #include <windows.h> 
+#include <pthread.h>
+#include "conio.h"
 
 void pt2();
-
-#include "conio.h"
+// pthread_mutex_t mutexofkey;
 
 class test2
 {

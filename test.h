@@ -25,6 +25,7 @@ private:
   pthread_t m_thread_3;
   pthread_t m_thread_4;
   pthread_t m_thread_5;
+  pthread_mutex_t mutex;
   static void *StartKeyboardThread(void *param);
   static void *StartThreadSayHello(void *param);
   static void *StartThreadSayHi(void *param);
