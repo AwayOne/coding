@@ -12,16 +12,16 @@ class test2
 {
 private:
   /* data */
-  unsigned char m_key;
-  char key[1024];
+    unsigned char m_key;
+    char key[1024];
 public:
-  test2(/* args */);
-  ~test2();
-  unsigned char GetKey()
-  {
-    return m_key;
-  };
-  void SetKey();
-  // void StartKey();
+    test2(/* args */);
+    ~test2();
+    unsigned char GetKey()
+    {
+        return m_key;
+    };
+    void SetKey();
+    // void StartKey();
 };
 #endif

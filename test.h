@@ -11,36 +11,36 @@ void pt();
 class test
 {
 private:
-  /* data */
-  int hello;
-  int hi;
-  int how;
-  int areyou;
-  int thbreak;
+    /* data */
+    int hello;
+    int hi;
+    int how;
+    int areyou;
+    int thbreak;
 
-  test2 *key;
-  pthread_t m_thread_key;
-  pthread_t m_thread_1;
-  pthread_t m_thread_2;
-  pthread_t m_thread_3;
-  pthread_t m_thread_4;
-  pthread_t m_thread_5;
-  pthread_mutex_t mutex;
-  static void *StartKeyboardThread(void *param);
-  static void *StartThreadSayHello(void *param);
-  static void *StartThreadSayHi(void *param);
-  static void *StartThreadSayHow(void *param);
-  static void *StartThreadSayAreYou(void *param);
-  void StartKey();
-  void SayHello();
-  void SayHi();
-  void SayHow();
-  void SayAreYou();
+    test2 *key;
+    pthread_t m_thread_key;
+    pthread_t m_thread_1;
+    pthread_t m_thread_2;
+    pthread_t m_thread_3;
+    pthread_t m_thread_4;
+    pthread_t m_thread_5;
+    pthread_mutex_t mutex;
+    static void *StartKeyboardThread(void *param);
+    static void *StartThreadSayHello(void *param);
+    static void *StartThreadSayHi(void *param);
+    static void *StartThreadSayHow(void *param);
+    static void *StartThreadSayAreYou(void *param);
+    void StartKey();
+    void SayHello();
+    void SayHi();
+    void SayHow();
+    void SayAreYou();
 public:
-  test(/* args */);
-  ~test();
-  void StartAllThred();
-  int GetOut();
+    test(/* args */);
+    ~test();
+    void StartAllThred();
+    int GetOut();
 };
 
 // thred::thred(/* args */)
