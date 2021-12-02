@@ -3,5 +3,15 @@
   "directory": "C:/Users/cnop/Desktop/coding/build",
   "command": "\"D:\\Program Files\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe\"   -g -o CMakeFiles\\m_cmake.dir\\main.cpp.obj -c C:\\Users\\cnop\\Desktop\\coding\\main.cpp",
   "file": "C:/Users/cnop/Desktop/coding/main.cpp"
+},
+{
+  "directory": "C:/Users/cnop/Desktop/coding/build",
+  "command": "\"D:\\Program Files\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe\"   -g -o CMakeFiles\\m_cmake.dir\\test.cpp.obj -c C:\\Users\\cnop\\Desktop\\coding\\test.cpp",
+  "file": "C:/Users/cnop/Desktop/coding/test.cpp"
+},
+{
+  "directory": "C:/Users/cnop/Desktop/coding/build",
+  "command": "\"D:\\Program Files\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe\"   -g -o CMakeFiles\\m_cmake.dir\\test2.cpp.obj -c C:\\Users\\cnop\\Desktop\\coding\\test2.cpp",
+  "file": "C:/Users/cnop/Desktop/coding/test2.cpp"
 }
 ]

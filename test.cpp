@@ -16,28 +16,29 @@ void test::StartKey()
         key->SetKey();
         
         pthread_mutex_lock (&mutex);
-        printf("key->GetKey() = %c", key->GetKey());
+        printf("key->GetKey() = %c\n", key->GetKey());
         pthread_mutex_unlock (&mutex);
         if(key->GetKey() == '1')
         {
-        // printf("hello = 1\n");
-        hello = 1;
+            // printf("hello = 1\n");
+            hello = 1;
         }
         if(key->GetKey() == '2')
         {
-        hi = 1;
+            hi = 1;
         }
         if(key->GetKey() == '3')
         {
-        how = 1;
+            how = 1;
         }
         if(key->GetKey() == '4')
         {
-        areyou = 1;
+            areyou = 1;
         }
         if(key->GetKey() == '9')
         {
-        thbreak = 1;
+            thbreak = 1;
+            break;
         }
     }
 }
